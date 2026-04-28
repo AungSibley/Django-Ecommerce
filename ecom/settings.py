@@ -1,13 +1,13 @@
 from pathlib import Path
 import os
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # Load our environmental variables
-load_dotenv()
+# load_dotenv()
 
 
 
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'cart',
     'payment',
     'whitenoise.runserver_nostatic',
+    'paypal.standard.ipn',
 ]
 
 MIDDLEWARE = [
@@ -87,8 +88,8 @@ DATABASES = {
         'NAME': 'railway',
         'USER': 'postgres',
         'PASSWORD': os.environ['DB_PASSWORD_YO'],
-        'HOST': 'spirited-playfulness.railway.internal',
-        'PORT': '48572',
+        'HOST': 'shuttle.proxy.rlwy.net',
+        'PORT': '39866',
         # 'OPTIONS': {
         #     'sslmode': 'require',  # important for Railway
         # }
@@ -141,4 +142,8 @@ STATICFILES_DIRS = ['static/']
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
+# Add paypal settings
+# Set sandbox to true
+PAYPAL_TEST = True
 
+PAYPAL_RECEIVER_EMAIL = 'business@codemytest.com'
