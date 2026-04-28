@@ -21,7 +21,7 @@ SECRET_KEY = 'django-insecure-q9*uqr5zgs&%aeiyf76-dj^*fnc!)@e%dy0$kg#(ybb@2&95=h
 DEBUG = True
 
 ALLOWED_HOSTS = ['postgres-production-5ccc1.up.railway.app', 'https://postgres-production-5ccc1.up.railway.app']
-CSRF_TRUSTED_ORIGINS = ['postgres-production-5ccc1.up.railway.app', 'https://postgres-production-5ccc1.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://postgres-production-5ccc1.up.railway.app']
 
 DEBUG = True
 
