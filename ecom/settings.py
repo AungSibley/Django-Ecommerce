@@ -87,7 +87,7 @@ DATABASES = {
         'NAME': 'railway',
         'USER': 'postgres',
         'PASSWORD': os.environ['DB_PASSWORD_YO'],
-        'HOST': 'switchback.proxy.rlwy.net',
+        'HOST': 'spirited-playfulness.railway.internal',
         'PORT': '48572',
         # 'OPTIONS': {
         #     'sslmode': 'require',  # important for Railway
