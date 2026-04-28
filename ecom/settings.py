@@ -20,8 +20,8 @@ SECRET_KEY = 'django-insecure-q9*uqr5zgs&%aeiyf76-dj^*fnc!)@e%dy0$kg#(ybb@2&95=h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['postgres-production-5ccc1.up.railway.app', 'https://postgres-production-5ccc1.up.railway.app']
-CSRF_TRUSTED_ORIGINS = ['https://postgres-production-5ccc1.up.railway.app']
+ALLOWED_HOSTS = ['postgres-production-9224a.up.railway.app', 'https://postgres-production-9224a.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://postgres-production-9224a.up.railway.app']
 
 DEBUG = True
 
@@ -88,7 +88,7 @@ DATABASES = {
         'USER': 'postgres',
         'PASSWORD': os.environ['DB_PASSWORD_YO'],
         'HOST': 'shuttle.proxy.rlwy.net',
-        'PORT': '39866',
+        'PORT': '5432',
         # 'OPTIONS': {
         #     'sslmode': 'require',  # important for Railway
         # }
